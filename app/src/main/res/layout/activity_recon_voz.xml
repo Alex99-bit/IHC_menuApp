@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recon_voz">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="177dp">
+
+        <TextView
+            android:id="@+id/textoEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="50sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/contenedorBoton"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/botonHablar"
+            android:layout_width="122dp"
+            android:layout_height="80dp"
+
+            android:src="@android:drawable/ic_btn_speak_now"
+            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+        <TextView
+            android:layout_width="243dp"
+            android:layout_height="56dp"
+            android:foregroundGravity="center"
+
+            android:gravity="center"
+            android:text="Presione Para hablar">
+
+        </TextView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="146dp">
+
+        <ImageButton
+            android:id="@+id/ButtonContinuar"
+            android:layout_width="352dp"
+            android:layout_height="136dp"
+            android:onClick="Siguiente2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/conti"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

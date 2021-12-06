@@ -8,16 +8,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.IHC_menuApp">
+        android:theme="@style/Theme.AppCompat">
+        <activity
+            android:name=".recon_voz"
+            android:exported="true" />
+        <activity
+            android:name=".get_number"
+            android:exported="true" />
         <activity
             android:name=".SalidaDinero"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".NumeroBillete"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".prueba"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".menu_inicial"
             android:exported="true">

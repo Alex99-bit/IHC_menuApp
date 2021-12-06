@@ -1,262 +1,307 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".prueba">
-
-    <ImageButton
-        android:id="@+id/benito2"
-        android:layout_width="280dp"
-        android:layout_height="108dp"
-        android:contentDescription="Billete De 500 pesos"
-        app:layout_constraintBottom_toTopOf="@+id/guideline202"
-        app:layout_constraintEnd_toStartOf="@+id/guideline103"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline201"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/benito"
-        android:onClick="EscribirQuinientos"
-        />
-
-    <TextView
-        android:id="@+id/tvResultado"
-        android:layout_width="307dp"
-        android:layout_height="158dp"
-        android:layout_margin="5dp"
-        android:background=" #000"
-        android:gravity="right|center_vertical"
-        android:text="0"
-        android:textColor="@color/white"
-        android:textSize="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline201"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent">
 
 
-    <ImageButton
-        android:id="@+id/sorjuana"
-        android:layout_width="280dp"
-        android:layout_height="108dp"
-        android:contentDescription="Billete De 200 pesos"
-        app:layout_constraintBottom_toTopOf="@+id/guideline203"
-        app:layout_constraintEnd_toStartOf="@+id/guideline103"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/benito2"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/sorjuana"
-        android:onClick="EscribirDoscientos"
-        />
-
-
-    <ImageButton
-        android:id="@+id/neza"
-        android:layout_width="280dp"
-        android:layout_height="108dp"
-        android:contentDescription="Billete De 100 pesos"
-        app:layout_constraintBottom_toTopOf="@+id/guideline204"
-        app:layout_constraintEnd_toStartOf="@+id/guideline103"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/neza"
-        android:onClick="EscribirCien"
-        />
-
-    <ImageButton
-        android:id="@+id/morelos"
-        android:layout_width="280dp"
-        android:layout_height="108dp"
-        android:contentDescription="Billete De 50 pesos"
-        app:layout_constraintBottom_toTopOf="@+id/guideline205"
-        app:layout_constraintEnd_toStartOf="@+id/guideline103"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline204"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/morelos"
-        android:onClick="EscribirCincuenta"
-        />
-
-    <ImageButton
-        android:id="@+id/beni3"
-        android:layout_width="290dp"
-        android:layout_height="129dp"
-        android:contentDescription="Billete De 20 pesos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline103"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/beni2"
-        android:onClick="EscribirVeinte"
-        />
-
-    <ImageButton
-        android:id="@+id/diez"
-        android:layout_width="93dp"
-        android:layout_height="107dp"
-        android:contentDescription="Moneda de 10 pesos"
-        app:layout_constraintBottom_toTopOf="@+id/guideline202"
-        app:layout_constraintEnd_toStartOf="@+id/guideline105"
-        app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline201"
-        app:layout_constraintVertical_bias="0.512"
-        app:srcCompat="@drawable/diez"
-        android:onClick="EscribirDiez"
-        />
-
-
-    <ImageButton
-        android:id="@+id/cinco"
-        android:layout_width="94dp"
-        android:layout_height="108dp"
-        android:contentDescription="moneda de 5 pesos"
-        app:layout_constraintBottom_toTopOf="@+id/guideline203"
-        app:layout_constraintEnd_toStartOf="@+id/guideline105"
-        app:layout_constraintHorizontal_bias="@+id/guideline103"
-        app:layout_constraintStart_toEndOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline202"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/cinco"
-        android:onClick="EscribirCinco"
-        />
-    <ImageButton
-        android:id="@+id/dos"
-        android:layout_width="94dp"
-        android:layout_height="108dp"
-        android:contentDescription="moneda 2 pesos"
-        app:layout_constraintBottom_toTopOf="@+id/guideline204"
-        app:layout_constraintEnd_toStartOf="@+id/guideline105"
-        app:layout_constraintHorizontal_bias="@+id/guideline103"
-        app:layout_constraintStart_toEndOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/dos"
-        android:onClick="EscribirDos"
-        />
-
-    <ImageButton
-        android:id="@+id/uno"
-        android:layout_width="94dp"
-        android:layout_height="108dp"
-        android:contentDescription="moneda 1 peso"
-        app:layout_constraintBottom_toTopOf="@+id/guideline205"
-        app:layout_constraintEnd_toStartOf="@+id/guideline105"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/uno"
-        android:onClick="EscribirUno"
-        />
-
-
-    <ImageButton
-        android:id="@+id/borrar"
-        android:layout_width="88dp"
-        android:layout_height="119dp"
-        android:contentDescription="borrar"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/guideline103"
-        app:layout_constraintTop_toBottomOf="@+id/uno"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/clear"
-        android:onClick="EscribirClear"
-
-        />
-
-    <ImageButton
-        android:id="@+id/clear"
-        android:layout_width="92dp"
-        android:layout_height="147dp"
-        android:contentDescription="moneda 1 peso"
-        app:layout_constraintBottom_toTopOf="@+id/guideline201"
-        app:layout_constraintEnd_toStartOf="@+id/guideline102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back"
-        android:onClick="EscribirBack"
-        />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline101"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline102"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.23" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline103"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.7" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline104"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.46
-" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline105"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.93" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline201"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.22298221" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline202"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.36935705" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline203"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5225718" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline205"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8248974" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline204"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.68262655" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0sp"
 
 
 
+        tools:context=".prueba">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/button8"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/button1"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/button1"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/button2"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/button2"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/button5"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/button5"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/button10"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/button10"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/button20"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/button50"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="36dp"
+
+            android:gravity="center"
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/Button100"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/button20"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+
+            android:layout_marginTop="64dp"
+            android:gravity="center"
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/button50"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/Button500"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            app:finalNumber="10"
+
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/Button200"
+            android:layout_width="239dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/Button500"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/Button100"
+            android:layout_width="239dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+
+            app:finalNumber="10"
+            app:initialNumber="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView500"
+            app:layout_constraintTop_toBottomOf="@+id/Button200"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <ImageView
+            android:id="@+id/imageView200"
+            android:layout_width="148dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView500"
+            app:srcCompat="@drawable/sorjuana" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="165dp" />
+
+        <ImageView
+            android:id="@+id/imageView500"
+            android:layout_width="162dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ButtonClear"
+            app:srcCompat="@drawable/benito" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="162dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView200"
+            app:srcCompat="@drawable/neza" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="166dp"
+            android:layout_height="114dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/morelos" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="159dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:srcCompat="@drawable/beni2" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:srcCompat="@drawable/diez" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:srcCompat="@drawable/cinco" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:srcCompat="@drawable/dos" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:srcCompat="@drawable/uno" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="107dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.275"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/cincuentac"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="123dp"
+            android:layout_height="117dp"
+            android:onClick="Siguiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/siguiente"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/ButtonClear"
+            android:layout_width="117dp"
+            android:layout_height="91dp"
+            android:onClick="Borrar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="141dp"
+            android:layout_height="85dp"
+            android:text="0.0"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintStart_toEndOf="@+id/ButtonClear"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

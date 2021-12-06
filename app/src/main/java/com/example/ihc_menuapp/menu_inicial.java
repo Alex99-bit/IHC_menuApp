@@ -23,4 +23,9 @@ public class menu_inicial extends AppCompatActivity {
         Intent calculadora = new Intent(this,NumeroBillete.class);
         startActivity(calculadora);
     }
+
+    public void voz(View view){
+        Intent reconvoz = new Intent(this,recon_voz.class);
+        startActivity(reconvoz);
+    }
 }

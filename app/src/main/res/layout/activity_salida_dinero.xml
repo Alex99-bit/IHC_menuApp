@@ -3,71 +3,347 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
+    android:screenOrientation="portrait"
     android:layout_width="match_parent">
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
+        android:layout_height="match_parent"
+        android:padding="40dp"
 
         tools:context=".SalidaDinero">
 
-
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="60dp"
-            android:layout_height="16dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/tvdoscientos"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
             android:layout_marginTop="20dp"
-            android:text="TextView"
+
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvquinientos"
+            tools:text="0" />
+        <TextView
+            android:id="@+id/tvcien"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
 
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvdoscientos"
+            android:layout_marginTop="20dp"
+            tools:text="0" />
+        <TextView
+            android:id="@+id/tvcincuenta"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
 
-        <Button
-            android:id="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvcien"
+            android:layout_marginTop="20dp"
+            tools:text="0" />
+        <TextView
+            android:id="@+id/tvbeinte"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvcincuenta"
+            android:layout_marginTop="20dp"
+            tools:text="0" />
+        <TextView
+            android:id="@+id/tvdiez"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvbeinte"
+            android:layout_marginTop="20dp"
+            tools:text="0" />
+        <TextView
+            android:id="@+id/tvcinco"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvdiez"
+            android:layout_marginTop="20dp"
+            tools:text="0" />
+        <TextView
+            android:id="@+id/tvdos"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvcinco"
+            android:layout_marginTop="20dp"
+            tools:text="0" />
+        <TextView
+            android:id="@+id/tvuno"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvdos"
+            android:layout_marginTop="12dp"
+            tools:text="0" />
+        <TextView
+            android:id="@+id/tvcincuentac"
+            android:layout_width="128dp"
+            android:layout_height="127dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="50dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvuno"
+            android:layout_marginTop="12dp"
+            tools:text="0" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Regresar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            android:onClick="Regresar"
-            />
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="227dp"></androidx.constraintlayout.widget.Guideline>
+        <TextView
+            android:id="@+id/tvtotal"
+            android:layout_width="227dp"
+            android:layout_height="129dp"
+            android:text="0"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
 
-        <Button
-            android:id="@+id/button2"
+
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:foregroundGravity="top"/>
+
+
+        <ImageButton
+            android:id="@+id/BenitoGrande"
+            android:layout_width="227dp"
+            android:layout_height="129dp"
+
+            android:layout_marginTop="4dp"
+            android:contentDescription="Billete500 pesos"
+
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvtotal"
+            app:srcCompat="@drawable/benito"
+            android:foregroundGravity="top"/>
+
+        <ImageButton
+            android:id="@+id/SorJuana"
+            android:layout_width="227dp"
+            android:layout_height="129dp"
+
+            android:contentDescription="Billete500 pesos"
+            android:layout_marginTop="20dp"
+
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/BenitoGrande"
+            app:srcCompat="@drawable/sorjuana" />
+        <ImageButton
+            android:id="@+id/Neza"
+            android:layout_width="227dp"
+            android:layout_height="129dp"
+
+            android:contentDescription="Billete 100 pesos"
+
+
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/SorJuana"
+            app:srcCompat="@drawable/neza" />
+        <ImageButton
+            android:id="@+id/Morelos"
+            android:layout_width="227dp"
+            android:layout_height="129dp"
+
+            android:contentDescription="Billete 50 pesos"
+
+
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/Neza"
+            app:srcCompat="@drawable/morelos" />
+
+
+        <ImageButton
+            android:id="@+id/Beinte"
+            android:layout_width="224dp"
+            android:layout_height="118dp"
+
+            android:layout_marginTop="20dp"
+
+
+            android:contentDescription="Billete 50 pesos"
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/Morelos"
+            app:srcCompat="@drawable/beni2" />
+
+        <ImageButton
+            android:id="@+id/diez"
+            android:layout_width="218dp"
+            android:layout_height="130dp"
+
+            android:layout_marginTop="20dp"
+
+
+            android:contentDescription="Moneda de Diez pesos"
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/Beinte"
+            app:srcCompat="@drawable/diez" />
+        <ImageButton
+            android:id="@+id/cinco"
+            android:layout_width="224dp"
+            android:layout_height="118dp"
+
+            android:layout_marginTop="20dp"
+
+
+            android:contentDescription="Moneda de dos pesos"
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/diez"
+            app:srcCompat="@drawable/cinco" />
+        <ImageButton
+            android:id="@+id/dos"
+            android:layout_width="224dp"
+            android:layout_height="118dp"
+
+            android:layout_marginTop="20dp"
+
+
+            android:contentDescription="Moneda de cinco pesos"
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/cinco"
+            app:srcCompat="@drawable/dos" />
+
+        <ImageButton
+            android:id="@+id/uno"
+            android:layout_width="213dp"
+            android:layout_height="131dp"
+
+            android:layout_marginTop="20dp"
+
+
+            android:contentDescription="Moneda de un peso"
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/dos"
+            app:srcCompat="@drawable/uno" />
+        <ImageButton
+            android:id="@+id/cincuentac"
+            android:layout_width="213dp"
+            android:layout_height="131dp"
+
+            android:layout_marginTop="20dp"
+
+
+            android:contentDescription="Moneda de un peso"
+            android:foregroundGravity="top"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/uno"
+            app:srcCompat="@drawable/cincuentac" />
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="1dp"></androidx.constraintlayout.widget.Guideline>
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:text="Button"
+        <TextView
+            android:id="@+id/tvquinientos"
+            android:layout_width="129dp"
+            android:layout_height="131dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:clickable="false"
+            android:gravity="center|center"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tvtotal"
+            tools:text="0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>
