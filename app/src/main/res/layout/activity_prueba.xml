@@ -14,7 +14,7 @@
 
 
 
-        tools:context=".prueba">
+        tools:context=".MainActivity">
 
         <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
             android:id="@+id/button8"
@@ -270,28 +270,24 @@
             app:layout_constraintHorizontal_bias="0.275"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView9"
-            app:srcCompat="@drawable/cincuentac"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:srcCompat="@drawable/cincuentac" />
 
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="123dp"
             android:layout_height="117dp"
-            android:onClick="Siguiente"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/siguiente"
-            tools:ignore="SpeakableTextPresentCheck" />
-
+            android:onClick="Siguiente"/>
         <ImageButton
             android:id="@+id/ButtonClear"
             android:layout_width="117dp"
             android:layout_height="91dp"
-            android:onClick="Borrar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_menu_revert"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:onClick="Borrar"/>
 
         <TextView
             android:id="@+id/tvResult"

@@ -148,9 +148,11 @@ public class prueba extends AppCompatActivity {
         btn5c.setNumber(String.valueOf(0));;
 
     }
+
+
     public void Siguiente (View View){
         String valor= A.toString();
-        Intent next = new Intent(this,prueba.class);
+        Intent next = new Intent(this,get_number.class);
         next.putExtra("valor",valor);
         startActivity(next);
 
