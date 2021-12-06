@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".billeteNumero">
+
+    <ImageButton
+        android:id="@+id/benito2"
+        android:layout_width="280dp"
+        android:layout_height="108dp"
+        android:contentDescription="Billete De 500 pesos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline202"
+        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline201"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/benito"
+        android:onClick="EscribirQuinientos"
+        />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="307dp"
+        android:layout_height="158dp"
+        android:layout_margin="5dp"
+        android:background=" #000"
+        android:gravity="right|center_vertical"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline201"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline102"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/sorjuana"
+        android:layout_width="280dp"
+        android:layout_height="108dp"
+        android:contentDescription="Billete De 200 pesos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline203"
+        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/benito2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sorjuana"
+        android:onClick="EscribirDoscientos"
+        />
+
+
+    <ImageButton
+        android:id="@+id/neza"
+        android:layout_width="280dp"
+        android:layout_height="108dp"
+        android:contentDescription="Billete De 100 pesos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline204"
+        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline203"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/neza"
+        android:onClick="EscribirCien"
+        />
+
+    <ImageButton
+        android:id="@+id/morelos"
+        android:layout_width="280dp"
+        android:layout_height="108dp"
+        android:contentDescription="Billete De 50 pesos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline205"
+        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline204"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/morelos"
+        android:onClick="EscribirCincuenta"
+        />
+
+    <ImageButton
+        android:id="@+id/beni3"
+        android:layout_width="290dp"
+        android:layout_height="129dp"
+        android:contentDescription="Billete De 20 pesos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline205"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/beni2"
+        android:onClick="EscribirVeinte"
+        />
+
+    <ImageButton
+        android:id="@+id/diez"
+        android:layout_width="93dp"
+        android:layout_height="107dp"
+        android:contentDescription="Moneda de 10 pesos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline202"
+        app:layout_constraintEnd_toStartOf="@+id/guideline105"
+        app:layout_constraintStart_toStartOf="@+id/guideline103"
+        app:layout_constraintTop_toTopOf="@+id/guideline201"
+        app:layout_constraintVertical_bias="0.512"
+        app:srcCompat="@drawable/diez"
+        android:onClick="EscribirDiez"
+        />
+
+
+    <ImageButton
+        android:id="@+id/cinco"
+        android:layout_width="94dp"
+        android:layout_height="108dp"
+        android:contentDescription="moneda de 5 pesos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline203"
+        app:layout_constraintEnd_toStartOf="@+id/guideline105"
+        app:layout_constraintHorizontal_bias="@+id/guideline103"
+        app:layout_constraintStart_toEndOf="@+id/guideline103"
+        app:layout_constraintTop_toTopOf="@+id/guideline202"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cinco"
+        android:onClick="EscribirCinco"
+        />
+    <ImageButton
+        android:id="@+id/dos"
+        android:layout_width="94dp"
+        android:layout_height="108dp"
+        android:contentDescription="moneda 2 pesos"
+        app:layout_constraintBottom_toTopOf="@+id/guideline204"
+        app:layout_constraintEnd_toStartOf="@+id/guideline105"
+        app:layout_constraintHorizontal_bias="@+id/guideline103"
+        app:layout_constraintStart_toEndOf="@+id/guideline103"
+        app:layout_constraintTop_toTopOf="@+id/guideline203"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dos"
+        android:onClick="EscribirDos"
+        />
+
+    <ImageButton
+        android:id="@+id/uno"
+        android:layout_width="94dp"
+        android:layout_height="108dp"
+        android:contentDescription="moneda 1 peso"
+        app:layout_constraintBottom_toTopOf="@+id/guideline205"
+        app:layout_constraintEnd_toStartOf="@+id/guideline105"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline103"
+        app:layout_constraintTop_toTopOf="@+id/guideline204"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/uno"
+        android:onClick="EscribirUno"
+        />
+
+
+    <ImageButton
+        android:id="@+id/borrar"
+        android:layout_width="88dp"
+        android:layout_height="119dp"
+        android:contentDescription="borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline103"
+        app:layout_constraintTop_toBottomOf="@+id/uno"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/clear"
+        android:onClick="EscribirClear"
+
+        />
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="92dp"
+        android:layout_height="147dp"
+        android:contentDescription="moneda 1 peso"
+        app:layout_constraintBottom_toTopOf="@+id/guideline201"
+        app:layout_constraintEnd_toStartOf="@+id/guideline102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        android:onClick="EscribirBack"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.46
+" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline201"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22298221" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline202"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36935705" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline203"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5225718" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline205"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8248974" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline204"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68262655" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

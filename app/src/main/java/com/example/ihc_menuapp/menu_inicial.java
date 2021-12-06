@@ -28,4 +28,9 @@ public class menu_inicial extends AppCompatActivity {
         Intent reconvoz = new Intent(this,recon_voz.class);
         startActivity(reconvoz);
     }
+
+    public void billete_numero(View view) {
+        Intent next = new Intent(this,billeteNumero.class);
+        startActivity(next);
+    }
 }

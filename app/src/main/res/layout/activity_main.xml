@@ -20,10 +20,10 @@
 
     <Button
         android:id="@+id/buttonBilletes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="116dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="24dp"
         android:onClick="muestraBilletes"
         android:text="Billetes"
         android:visibility="visible"
@@ -32,10 +32,10 @@
 
     <Button
         android:id="@+id/buttonCalculadora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="296dp"
+        android:layout_width="159dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="292dp"
         android:onClick="abreCalc"
         android:text="Calculadora"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,16 +43,25 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="83dp"
-        android:layout_height="84dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="148dp"
+        android:layout_width="111dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="40dp"
         android:onClick="voz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCalculadora"
-        app:layout_constraintVertical_bias="0.593"
         app:srcCompat="@android:drawable/ic_btn_speak_now"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="226dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="20dp"
+        android:text="Billetes a Números"
+        android:onClick="billete_numero"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

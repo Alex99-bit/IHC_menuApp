@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.text.DecimalFormat;
+
 public class NumeroBillete extends AppCompatActivity {
     EditText TNumeros;
     float a;
@@ -18,12 +20,13 @@ public class NumeroBillete extends AppCompatActivity {
         TNumeros=findViewById(R.id.Numeros);
     }
 
+    private static final DecimalFormat df = new DecimalFormat("0.00");
     public void Agregar1(View view) {
         CheckVacio();
         b=a;
         a= Float.parseFloat(TNumeros.getText().toString());
         a=(float) (a+.1);;
-        TNumeros.setText(Float.toString(a));
+        TNumeros.setText( String.format("%.1f",Float.toString(a)));
 
     }
 
@@ -82,6 +85,13 @@ public class NumeroBillete extends AppCompatActivity {
         a=a+100;
         TNumeros.setText(Float.toString(a));
     }
+    public void Agregar1000(View view) {
+        CheckVacio();
+        b=a;
+        a= Float.parseFloat(TNumeros.getText().toString());
+        a=a+1000;
+        TNumeros.setText(Float.toString(a));
+    }
     public void Restar10(View view) {
         CheckVacio();
         b=a;
@@ -105,6 +115,18 @@ public class NumeroBillete extends AppCompatActivity {
 
         TNumeros.setText(Float.toString(a));
     }
+    public void Restar1000(View view) {
+        CheckVacio();
+        b=a;
+        a= Float.parseFloat(TNumeros.getText().toString());
+        if(a-1000<0){
+            TNumeros.setText(Float.toString(0));
+            return;
+        }
+        a=a-1000;
+
+        TNumeros.setText(Float.toString(a));
+    }
     public void EscribirClear(View view) {
         CheckVacio();
 
@@ -116,7 +138,10 @@ public class NumeroBillete extends AppCompatActivity {
         TNumeros.setText(Float.toString(b));
     }
     public void Siguiente (View View){
+        String valor= TNumeros.getText().toString();
         Intent next = new Intent(this,SalidaDinero.class);
+        next.putExtra("valor",valor);
         startActivity(next);
+
     }
 }
